@@ -40,7 +40,7 @@
             </field>
         </record>
 
-        <record model="ir.actions.act_window" id="action_transaction_master">
+        <record model="ir.actions.act_window" id="action_department_master">
             <field name="name">Teachers</field>
             <field name="type">ir.actions.act_window</field>
             <field name="context">{'readonly_by_pass': True}</field>
@@ -50,9 +50,8 @@
         </record>
 
 
-        <menuitem name="Teachers Master" id="menu_teachers_master" parent="menu_teachers" sequence="2"
-                  action="action_teachers_master"/>
-        <menuitem name="Teachers Management" id="menu_teachers"  sequence="1"
-                  />
+        <menuitem name="Teachers Master" id="menu_department_master" parent="menu_teachers_management" sequence="3"
+                  action="action_department_master"/>
+
     </data>
 </odoo>
