@@ -16,10 +16,11 @@
 
                     </header>
                     <sheet>
+                        <group>
 
                     <field name="department_name" />
                     <field name="dept_id" />
-
+</group>
 
                     </sheet>
                 </form>

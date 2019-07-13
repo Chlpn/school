@@ -13,20 +13,19 @@
                 <form string="Teacher Master" duplicate="0">
 
                     <sheet>
-
-
+ <group>
                     <field name="department" options="{'no_quick_create':True,'no_create_edit':True}" required='True'/>
 
                     <field name="teacher_name" />
                     <field name="teacher_id" />
-
+ </group>
 
                     </sheet>
                 </form>
             </field>
         </record>
 
-        <!--  Transaction master tree View -->
+
         <record model="ir.ui.view" id="transaction_master_tree">
             <field name="name">teachers.master.tree</field>
             <field name="model">teachers.master</field>
