@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+                 <!--  Department master sequence -->
+
+
+         <!--  Teacher master form View -->
+        <record model="ir.ui.view" id="dept_master_form">
+            <field name="name">dept.master.form</field>
+            <field name="model">dept.master</field>
+            <field name="arch" type="xml">
+                <form string="Department Master" duplicate="0">
+                    <header>
+                        <button name="add" string="add_teacher" type="object"/>
+
+                    </header>
+                    <sheet>
+
+                    <field name="department_name" />
+                    <field name="dept_id" />
+
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!--  Transaction master tree View -->
+        <record model="ir.ui.view" id="transaction_master_tree">
+            <field name="name">teachers.master.tree</field>
+            <field name="model">teachers.master</field>
+            <field name="arch" type="xml">
+                <tree string="Teachers Master" >
+                    <field name="teacher_id"/>
+                    <field name="teacher_name"/>
+                    <field name="department"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_transaction_master">
+            <field name="name">Teachers</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="context">{'readonly_by_pass': True}</field>
+            <field name="res_model">teachers.master</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <menuitem name="Teachers Master" id="menu_teachers_master" parent="menu_teachers" sequence="2"
+                  action="action_teachers_master"/>
+        <menuitem name="Teachers Management" id="menu_teachers"  sequence="1"
+                  />
+    </data>
+</odoo>

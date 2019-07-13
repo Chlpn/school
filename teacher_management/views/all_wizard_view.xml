@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="add_teacher_wizard">
+            <field name="name">add.teacher.wizard</field>
+            <field name="model">add.teacher.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Add Teacher">
+                    <group>
+
+                            <field name="rec_id"/>
+
+                            <field name="rec_name"/>
+
+
+
+                    </group>
+                    <footer>
+                        <button name="add_new" string="Save and Add New Teacher" type="object" class="oe_highlight"/>
+                        or <button string="Cancel" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+
+
+
+    </data>
+</odoo>
