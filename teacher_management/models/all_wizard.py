@@ -25,4 +25,5 @@ class AddTeacher(models.TransientModel):
 
         }
         dept_master = self.env['teachers.master'].create(vals)
+        dept_master.add_teacher(addmore)
 
