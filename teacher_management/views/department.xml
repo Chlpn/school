@@ -41,16 +41,16 @@
         </record>
 
         <record model="ir.actions.act_window" id="action_department_master">
-            <field name="name">Teachers</field>
+            <field name="name">Department Master</field>
             <field name="type">ir.actions.act_window</field>
             <field name="context">{'readonly_by_pass': True}</field>
-            <field name="res_model">teachers.master</field>
+            <field name="res_model">dept.master</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
         </record>
 
 
-        <menuitem name="Teachers Master" id="menu_department_master" parent="menu_teachers_management" sequence="3"
+        <menuitem name="Department Master" id="menu_department_master" parent="menu_teachers_management" sequence="3"
                   action="action_department_master"/>
 
     </data>
