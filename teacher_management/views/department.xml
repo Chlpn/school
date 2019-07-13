@@ -12,7 +12,7 @@
             <field name="arch" type="xml">
                 <form string="Department Master" duplicate="0">
                     <header>
-                        <button name="add" string="add_teacher" type="object"/>
+                        <button name="add_teacher" string="add_teacher" type="object"/>
 
                     </header>
                     <sheet>

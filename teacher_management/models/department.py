@@ -7,6 +7,7 @@ from odoo.exceptions import UserError
 
 class Teachers(models.Model):
     _name = "dept.master"
+    _name = "dept.master"
     _description = "Teachers Management"
     _rec_name = 'dept_id'
 
