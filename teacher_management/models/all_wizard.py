@@ -14,7 +14,7 @@ class AddTeacher(models.TransientModel):
     rec_name = fields.Char(string='Teacher Name')
 
     @api.multi
-    def add_teacher(self):
+    def add_new(self):
         addmore = self.env['dept.master'].browse(self.env.context.get('active_id'))
 
 
